@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Midterm Lab Exam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body class="border-black">
+
+<!-- Start of Container -->
+<div class="container" style="height: 15vh; overflow-y: scroll;">
+	<table id="dataTable">
+		<col width="67">
+  <col width="75">
+  <col width="41">
+		<thead>
+			<tr>
+				<th>ID    </th>
+				<th>Name   </th>
+				<th>Address</th>
+			</tr>
+			</thead>
+			<tbody id="contentArea">
+
+		</tbody>
+	</table>
+
+	</div>
+
+
+	<div class="container">
+		<!-- Message -->
+		<div class="container text-center" >
+				<span id="msg" class="bg-blue text-white msg"></span>
+			</div>
+		<form action="action_page.php">
+			<!-- ID -->
+			<div class="row">
+				<div class="col-label">
+					<label for="uid">ID</label>
+				</div>
+				<div class="col-input">
+					<input type="text" id="uid" name="firstname" placeholder="">
+				</div>
+			</div>
+		<!-- 	Name -->
+			<div class="row">
+				<div class="col-label">
+					<label for="uname">Name</label>
+				</div>
+				<div class="col-input">
+					<input type="text" id="uname" name="lastname" placeholder="">
+				</div>
+			</div>
+		<!-- 	Address -->
+			<div class="row">
+				<div class="col-label">
+					<label for="uaddr">Address</label>
+				</div>
+				<div class="col-input">
+					<textarea id="uaddr" name="subject" placeholder="" style=""></textarea>
+				</div>
+			</div>
+			<!-- Buttons -->
+			<div class="row">
+				<!-- Add Record -->
+				<div class="col-label">
+					<div class="row">
+						<a  href="javascript:addRecord()"class="btn bg-blue text-bold"> Add Record</a>
+					</div>
+
+				</div>
+				<!-- Update Record -->
+				<div class="col-label">
+					<div class="row">
+						<a  class="btn bg-violet text-bold" href= "javascript:updateRecord()"> Update Record</a>
+					</div>
+				</div>
+				<!-- Delete Record -->
+				<div class="col-label">
+					<div class="row">
+						<a  class="btn bg-red text-bold" href="javascript:deleteRecord()"> Delete Record</a>
+					</div>
+
+				</div>
+				<!-- Display Record -->
+				<div class="col-label">
+					<div class="row">
+						<a  class="btn bg-green text-bold" href="javascript:displayRecord()">Display Record</a>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Message -->
+			<br/>
+			
+		</form>
+	</div>
+<!-- End of container -->
+<br/>
+
+
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
